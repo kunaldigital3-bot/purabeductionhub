@@ -1,265 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Malik Dubai</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>𝙏𝙍𝘼𝘿𝙀 𝙒𝙄𝙏𝙃 𝙋𝙐𝙍𝘼𝘽 📊🚀</title>
+    
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1025652723570124');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1025652723570124&ev=PageView&noscript=1"
+    /></noscript>
 
-<!-- META PIXEL -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
 
-fbq('init','1153714410071909');
-fbq('track','PageView');
-</script>
+        body {
+            background-color: #0b111e;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            color: #ffffff;
+        }
 
-<style>
+        .card {
+            background-color: #161f30;
+            border: 1px solid #232d42;
+            border-radius: 24px;
+            padding: 35px 25px;
+            width: 100%;
+            max-width: 380px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        }
 
-*{
-box-sizing:border-box;
-margin:0;
-padding:0;
-}
+        .avatar-container {
+            width: 110px;
+            height: 110px;
+            margin: 0 auto 18px auto;
+            border-radius: 50%;
+            border: 2px solid #ffffff;
+            overflow: hidden;
+            background-color: #232d42;
+        }
 
-body{
-font-family:Arial;
-background:#0b0f19;
-color:white;
-display:flex;
-justify-content:center;
-align-items:center;
-min-height:100vh;
-}
+        .avatar-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
 
-/* MAIN CARD */
+        .title {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+        }
 
-.container{
-width:380px;
-background:#111827;
-border-radius:25px;
-overflow:hidden;
-box-shadow:0 10px 40px rgba(0,0,0,0.6);
-}
+        .subtitle-list {
+            font-size: 14px;
+            color: #d1d5db;
+            line-height: 1.6;
+            margin-bottom: 25px;
+            font-weight: 400;
+        }
 
-/* HEADER */
+        .btn-join {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: linear-gradient(90deg, #5061ff 0%, #00b2ff 100%);
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            padding: 14px 24px;
+            border-radius: 30px;
+            box-shadow: 0 4px 15px rgba(0, 178, 255, 0.3);
+            transition: transform 0.2s ease;
+        }
 
-.header{
-background:linear-gradient(135deg,#6a5cff,#ff3cac);
-padding:30px;
-text-align:center;
-}
+        .btn-join:active {
+            transform: scale(0.98);
+        }
 
-.profile{
-width:110px;
-height:110px;
-border-radius:20px;
-object-fit:cover;
-animation:float 3s ease-in-out infinite;
-}
+        .telegram-icon {
+            width: 22px;
+            height: 22px;
+            background-color: #ffffff;
+            color: #00b2ff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+        }
 
-@keyframes float{
-0%{transform:translateY(0px);}
-50%{transform:translateY(-8px);}
-100%{transform:translateY(0px);}
-}
+        .timer-text {
+            color: #9ca3af;
+            font-size: 13px;
+            margin-top: 18px;
+        }
 
-.name{
-font-size:28px;
-font-weight:bold;
-margin-top:15px;
-}
+        .footer {
+            margin-top: 35px;
+            text-align: center;
+            color: #9ca3af;
+            font-size: 12px;
+            line-height: 1.8;
+            max-width: 380px;
+        }
 
-/* BADGES */
-
-.badges{
-margin-top:12px;
-}
-
-.badge{
-display:inline-block;
-padding:6px 14px;
-border-radius:20px;
-font-size:13px;
-margin:5px;
-}
-
-.premium{
-background:#8b5cf6;
-}
-
-.live{
-background:#22c55e;
-}
-
-/* MEMBERS */
-
-.members{
-margin-top:10px;
-font-size:15px;
-}
-
-/* STATS */
-
-.stats{
-display:flex;
-gap:12px;
-padding:20px;
-}
-
-.card{
-flex:1;
-padding:20px;
-border-radius:15px;
-text-align:center;
-font-weight:bold;
-}
-
-.win{
-background:linear-gradient(45deg,#22c55e,#16a34a);
-}
-
-.rating{
-background:linear-gradient(45deg,#f97316,#fb923c);
-}
-
-/* TELEGRAM BUTTON */
-
-.telegram{
-margin:0 20px 20px;
-display:flex;
-align-items:center;
-justify-content:center;
-gap:10px;
-padding:16px;
-border-radius:15px;
-background:linear-gradient(90deg,#6366f1,#a855f7);
-color:white;
-font-weight:bold;
-text-decoration:none;
-font-size:16px;
-}
-
-.telegram img{
-width:20px;
-}
-
-/* FEATURES */
-
-.features{
-display:flex;
-justify-content:space-around;
-padding:20px;
-text-align:center;
-}
-
-.feature{
-font-size:13px;
-}
-
-.icon{
-width:45px;
-height:45px;
-border-radius:12px;
-display:flex;
-align-items:center;
-justify-content:center;
-margin:auto;
-margin-bottom:6px;
-font-size:20px;
-}
-
-.v{background:#22c55e;}
-.s{background:#3b82f6;}
-.p{background:#ec4899;}
-.t{background:#f59e0b;}
-
-/* FOOTER */
-
-.footer{
-text-align:center;
-padding:15px;
-font-size:13px;
-color:#9ca3af;
-}
-
-</style>
+        .footer a {
+            color: #10b981;
+            text-decoration: none;
+            font-weight: 600;
+        }
+    </style>
 </head>
-
 <body>
 
-<div class="container">
+    <div class="card">
+        <div class="avatar-container">
+            <img src="logo.png" alt="Trade with Munaaf">
+        </div>
 
-<div class="header">
+        <h1 class="title">👑𝙏𝙍𝘼𝘿𝙀 𝙒𝙄𝙏𝙃 𝙋𝙐𝙍𝘼𝘽 📊🚀👑</h1>
 
-<img class="profile" src="logo.png">
+        <div class="subtitle-list">
+            <p>Start Earning with Expert Calls🔥</p>
+            <p>Trusted by 12,000+ Traders🌍</p>
+            <p>Join our Channel for daily updates✅</p>
+        </div>
 
-<div class="name">MALIK DUBAI</div>
+        <a href="https://t.me/+uNs4s0nuNixiOGZl" class="btn-join" onclick="fbq('track','Lead')">
+            <span class="telegram-icon">➤</span>
+            Join Now Free
+            <span class="telegram-icon">➤</span>
+        </a>
 
-<div class="badges">
-<span class="badge premium">⭐ Premium Analyst</span>
-<span class="badge live">🔴 Live Updates</span>
-</div>
+        <div class="timer-text">Redirecting in <span id="countdown">28</span> seconds...</div>
+    </div>
 
-<div class="members">👥 100k+ Active Members</div>
+    <div class="footer">
+        <p>This channel is for educational and informational purposes only.</p>
+        <p>ads Managed by <a href="https://t.me/+jE7sEbzR23gwM2U1">Kunal</a></p>
+    </div>
 
-</div>
-
-<div class="stats">
-
-<div class="card win">
-96%<br>WIN RATE
-</div>
-
-<div class="card rating">
-4.1 ⭐<br>RATING
-</div>
-
-</div>
-
-<a class="telegram" href="https://t.me/">
-
-<img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png">
-
-Join Telegram Channel
-
-</a>
-
-<div class="features">
-
-<div class="feature">
-<div class="icon v">✔</div>
-Verified
-</div>
-
-<div class="feature">
-<div class="icon s">🔒</div>
-Secure
-</div>
-
-<div class="feature">
-<div class="icon p">📈</div>
-Profitable
-</div>
-
-<div class="feature">
-<div class="icon t">⭐</div>
-Top Rated
-</div>
-
-</div>
-
-<div class="footer">
-© 2026 Malik Dubai - All rights reserved.
-</div>
-
-</div>
+    <script>
+        let seconds = 28;
+        const countdownEl = document.getElementById('countdown');
+        const timer = setInterval(() => {
+            seconds--;
+            if (countdownEl) countdownEl.innerText = seconds;
+            if (seconds <= 0) {
+                clearInterval(timer);
+            }
+        }, 1000);
+    </script>
 
 </body>
 </html>
